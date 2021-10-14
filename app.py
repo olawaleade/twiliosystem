@@ -30,7 +30,7 @@ if ENV_FILE:
 headings  = ('Organization_ID', 'Organization_Name', 'Operator_num1', 'Operator_num2', 'Operator_num3')
 
 # abc = auth0.organisation_name
-__TableName__ = "ins_data" # __TableName__ = abc
+__TableName__ = "twilioDB" # __TableName__ = abc
 
 client = boto3.client('dynamodb')
 
@@ -234,5 +234,5 @@ def update_item(id):
 
 
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=env.get('PORT', 3000))
+#if __name__ == "__main__":
+ #   app.run(host='0.0.0.0', port=env.get('PORT', 80))
